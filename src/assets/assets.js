@@ -1,5 +1,5 @@
 import profileImg from "./Profile-img.png";
-import profileImg2 from "./profile-img2.jpg";
+import profileImg2 from "./Profile-img2.jpg";
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
 import projectImg1 from '../assets/project1.avif';
@@ -79,7 +79,7 @@ export const projects = [
     title: "E-Commerce Platform",
     description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
     image: projectImg1,
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
+    tech: ["React","Tailwind CSS", "Java", "SpringBoot", "MySql"],
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
     demo: "#",
     code: "#",
@@ -106,7 +106,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
     image: projectImg4,
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
+    tech: ["React", "Tailwind CSS", "Framer Motion", "Markdown"],
     icons: [FaReact, FaCloud],
     demo: "#",
     code: "#",
