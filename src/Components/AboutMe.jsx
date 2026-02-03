@@ -22,14 +22,14 @@ const AboutMe = () => {
                          {/* Image + Journey content */}
                <div className='flex flex-col md:flex-row items-center gap-12'>
                     {/*Left side Content */}
-                 <div className=' md:w-1/2 px-5 overflow-hidden'>
+                 <div className='w-full md:w-1/2 px-3 md:px-5 overflow-hidden'>
                    <motion.img 
                          initial=
                          {{opacity:0, y:50}}
                          whileInView={{opacity:1 ,y:0}}
                          transition ={{duration:0.9, ease:'easeOut'}}
                          viewport={{once:false,amount:0.2}}
-                         className='w-full transform    md:h-auto  h-115 object-cover object-[center_top] rounded-2xl'
+                         className='w-full h-auto object-cover object-[center_top] rounded-2xl'
                          src={assets.profileImg2}
                          alt="profileimg">
                    </motion.img>
