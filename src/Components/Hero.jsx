@@ -9,7 +9,7 @@ const Hero = () => {
       transition ={{duration:0.6, ease:'easeOut'}}
       viewport={{once:true}}
       id='home'
-      className='flex flex-row h-screen w-full pt-10 pb-16 items-center bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]'
+      className='flex flex-row h-full w-full pt-10 pb-16 items-center bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]'
       >
         <div className='h-screen mx-auto w-full md:mt-0 mt-14 px-6 flex flex-col md:flex-row items-center   justify-center md:justify-between'>
             
