@@ -16,7 +16,7 @@ const Hero = () => {
             {/*Left Side Content*/}
             <div className='md:w-1/2 mb-15 md:mb-0 md:items-start '>
                 <h1 className='md:text-6xl  text-4xl font-bold mb-4'>
-                    Hi, I'm <span className='text-purple'>Sumit Kumar</span>
+                    Hi, I'm <span className='text-green-500'>Sumit Kumar</span>
                     
                 </h1>
                 <h2 className='md:text-4xl text-2xl font-bold mb-6 typewriter'>Full Stack Developer</h2>
