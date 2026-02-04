@@ -15,7 +15,7 @@ const AboutMe = () => {
         id='home'
         className='py-20 bg-dark-200 '
         >
-            <div className='container mx-auto py-6 '>
+            <div className='container mx-auto p-6 '>
                 <h1 className='text-3xl font-bold mb-5 text-center'>About <span className='text-purple'>Me</span></h1>
                 <p className='text-gray-400 mb-16 text-center'>Get to know more about my background and passion</p>
 

@@ -1,6 +1,6 @@
 import profileImg from "./Profile-img.png";
 import profileImg2 from "./Profile-img2.jpg";
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush,FaCodeBranch,FaLayerGroup, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
 import projectImg1 from '../assets/project1.avif';
 import projectImg2 from '../assets/project2.avif';
@@ -8,6 +8,8 @@ import projectImg3 from '../assets/project3.avif';
 import projectImg4 from '../assets/project4.avif';
 import projectImg5 from '../assets/project5.avif';
 import projectImg6 from '../assets/project6.avif';
+import Trees from '../assets/Trees.jpg'
+import JSProject from "../assets/JewelleryShopManagement.jpg";
 
 export const assets = {
   profileImg,
@@ -44,13 +46,13 @@ export const skills = [
     title: 'Frontend Development',
     icon: FaReact,
     description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['React', 'JavaScript','Tailwind CSS','Html','Css']
+    tags: ['React.Js', 'JavaScript','Tailwind CSS','Html','Css']
   },
   {
     title: 'Backend Development',
     icon: FaServer,
     description: 'Creating robust server-side applications and RESTful APIs.',
-    tags: ['Java', 'Spring Boot', 'C#', 'Entity FrameWork']
+    tags: ['Java', 'Spring Boot', 'C#','.Net', 'Entity FrameWork']
   },
   {
     title: 'Database Management',
@@ -59,22 +61,38 @@ export const skills = [
     tags: [ 'PostgreSQL', 'MySQL', 'SqlServer']
   },
   {
-    title: 'Cloud & DevOps',
-    icon: FaCloud,
-    description: 'Deploying and managing applications in cloud environments.',
-    tags: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
+    title: 'Frameworks & Libraries',
+    icon: FaLayerGroup,
+    description: 'Creating fast, structured, and reusable UI components using modern frontend frameworks.',
+    tags: ['React', 'Framer Motion', 'Vite','Tailwind CSS']
   },
   {
-    title: 'Tools & Technologies',
+    title: 'Tools & IDEs',
     icon: FaTools,
     description: 'Essential tools and technologies I use in my development workflow.',
     tags: ['Git & GitHub',  'Spring Tool Suite (STS)', 'Visual Studio Code', 'Eclipse IDE']
+  },
+  {
+    title: 'Version Control & Deployment',
+    icon: FaCodeBranch,
+    description: 'Using Git & GitHub to track changes, collaborate on projects, and maintain organized codebases..',
+    tags: ['Git & GitHub',  'CI/CD (basic)', 'Vercel Deployment']
   }
 ];
 
 
 
 export const projects = [
+   {
+    title: "Portfolio Website",
+    description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
+    image: projectImg4,
+    tech: ["React", "Tailwind CSS", "Framer Motion", "Markdown"],
+    icons: [FaReact, FaCloud],
+    demo: "#",
+    code: "#",
+  },
+  
   {
     title: "E-Commerce Platform",
     description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
@@ -85,33 +103,25 @@ export const projects = [
     code: "#",
   },
   {
-    title: "Task Management App",
-    description: "A productivity application with drag-and-drop functionality and real-time updates.",
-    image: projectImg2,
-    tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
+    title: "Jewellery Shop Management",
+    description: " Designed and developed a desktop-based jewellery shop management application.",
+    image: JSProject,
+    tech: ["C#", ".Net", "WPF", "Entity FrameWork","MY SQL"],
     icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
     demo: "#",
     code: "#",
   },
   {
-    title: "Fitness Tracker",
-    description: "A mobile app for tracking workouts, nutrition, and health metrics.",
-    image: projectImg3,
-    tech: ["React Native", "GraphQL", "MySQL", "Chart.js"],
+    title: "Adobe Trees ",
+    description: "Designed and developed a role-based web application for online tree plantation.",
+    image: Trees,
+    tech: ["React","Tailwind CSS", "NodeJs", "MongoDB"],
     icons: [FaReact, FaDatabase],
     demo: "#",
     code: "#",
   },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
-    image: projectImg4,
-    tech: ["React", "Tailwind CSS", "Framer Motion", "Markdown"],
-    icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
-  },
-  {
+ 
+  /*{
     title: "Chat App",
     description: "A real-time chat application with group messaging, emojis, and file sharing.",
     image: projectImg5,
@@ -128,7 +138,7 @@ export const projects = [
     icons: [FaRobot, FaReact, FaCloud],
     demo: "#",
     code: "#",
-  }
+  }*/
 ];
 
 
