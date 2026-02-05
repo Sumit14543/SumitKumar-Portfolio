@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
 import { workData } from '../assets/assets'
-import { div } from 'framer-motion/client'
 
 const WorkExprience = () => {
   return (

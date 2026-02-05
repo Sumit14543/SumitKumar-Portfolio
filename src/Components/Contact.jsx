@@ -66,7 +66,14 @@ const sendEmail = (e) => {
               <div className='space-y-8 pt-4'>
                 <div className='flex items-start'>
                   <div className='text-purple text-2xl mr-4'>
-                    <FaLocationDot/>
+                    <a
+                     href="https://maps.app.goo.gl/m3U4wp8ybCSd1t5cA"
+                     target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer"
+                    >
+                     <FaLocationDot size={24} />
+                    </a>
                   </div>
                   <div>
                     <h3 className='text-lg font-semibold mb-3'>Location</h3>
@@ -75,7 +82,9 @@ const sendEmail = (e) => {
                 </div>
                 <div className='flex items-start'>
                   <div className='text-purple text-2xl mr-4'>
-                    <MdEmail/>
+                      <a href="mailto:sumitlodhi9401@gmail.com" className="cursor-pointer">
+                        <MdEmail size={24} />
+                        </a>
                   </div>
                   <div>
                     <h3 className='text-lg font-semibold mb-3'>Email</h3>
@@ -84,7 +93,12 @@ const sendEmail = (e) => {
                 </div>
                 <div className='flex items-start'>
                   <div className='text-purple text-2xl mr-4'>
+                  
+
+                  <a href="tel:+919999999999" className="cursor-pointer">
                     <FaPhoneAlt/>
+                  </a>
+
                   </div>
                   <div>
                     <h3 className='text-lg font-semibold mb-3'>Phone</h3>
@@ -96,7 +110,7 @@ const sendEmail = (e) => {
                   <h3 className='font-semibold text-xl pb-4'>Follow <span className='text-purple'>me</span></h3>
                    <div className='flex space-x-4'>
                     <a href="https://github.com/Sumit14543/" className='h-12 w-12 bg-dark-400 hover:bg-purple rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGithub/></a>
-                    <a href="https://www.linkedin.com/in/sumit-kumar-501778223?utm_source=share_via&utm_content=profile&utm_medium=member_android" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaLinkedin/></a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-501778223?utm_source=share_via&utm_content=profile&utm_medium=member_android" className='h-12 w-12 bg-dark-400 hover:bg-orange-500 rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaLinkedin/></a>
                     <a href="https:t.me/Sumitrajput200" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaTelegramPlane/></a>
                     <a href="https://www.instagram.com/sumitrajput.376/" className='h-12 w-12 bg-dark-400 hover:bg-[#E4405F] rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaInstagram/></a>
                      <a href="https://sumit-kumar-portfolio-lilac.vercel.app/" className='h-12 w-12 bg-dark-400 hover:bg-pink rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGlobe/></a>
