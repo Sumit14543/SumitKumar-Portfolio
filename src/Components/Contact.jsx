@@ -8,11 +8,31 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    'service_wq52kjq',
+    'template_mb7liwl',
+    e.target,
+    '2XbSIR18rflMZxDC_'
+  )
+  .then(() => {
+    alert("Message Sent Successfully 😎");
+  })
+  .catch(() => {
+    alert("Error sending message");
+  });
+};
+
   return (
-    
+  
     <motion.div
             initial={{opacity:0, y:50}}
             whileInView={{opacity:1 ,y:0}}
@@ -25,18 +45,18 @@ const Contact = () => {
             <h3 className='text-center text-4xl font-bold mb-6'>Get In <span className='text-purple'>Touch</span> </h3>
             <p className='text-gray-400 text-center pb-8'>Have a project in mind or want to collaborate? Let's talk!</p>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
-              <form action="#" className='space-y-6'>
+              <form action="#" onSubmit={sendEmail}  className='space-y-6'>
                 <div>
                   <label htmlFor="name" className='block text-gray-300 mb-2'>Your Name</label>
-                  <input type="text" className='w-full bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' id="name" />
+                  <input type="text" name='name' className='w-full bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' id="name" />
                 </div>
                 <div>
                   <label htmlFor="email" className='block text-gray-300 mb-2'>Your Email</label>
-                  <input type="email" className='w-full bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' name="" id="email" />
+                  <input type="email"  className='w-full bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' name="email" id="email" />
                 </div>
                  <div>
                   <label htmlFor="message" className='block text-gray-300 mb-2'>Message</label>
-                  <textarea className='w-full h-40 bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' name="" id="message" />
+                  <textarea className='w-full h-40 bg-dark-300 border-dark-400 rounded-lg px-4 py-3 outline-none' name="message" id="message" />
                 </div>
                  <div>
                  <button className='bg-purple px-4 py-3 cursor-pointer transform duration-300 hover:bg-purple-700  w-full rounded-lg' type="submit">Send Message</button>
@@ -75,11 +95,11 @@ const Contact = () => {
                 <div className='pt-4'>
                   <h3 className='font-semibold text-xl pb-4'>Follow <span className='text-purple'>me</span></h3>
                    <div className='flex space-x-4'>
-                    <a href="#" className='h-12 w-12 bg-dark-400 hover:bg-purple rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGithub/></a>
-                    <a href="#" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaLinkedin/></a>
-                    <a href="#" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaXTwitter/></a>
-                    <a href="#" className='h-12 w-12 bg-dark-400 hover:bg-[#E4405F] rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaInstagram/></a>
-                     <a href="#" className='h-12 w-12 bg-dark-400 hover:bg-pink rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGlobe/></a>
+                    <a href="https://github.com/Sumit14543/" className='h-12 w-12 bg-dark-400 hover:bg-purple rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGithub/></a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-501778223?utm_source=share_via&utm_content=profile&utm_medium=member_android" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaLinkedin/></a>
+                    <a href="https:t.me/Sumitrajput200" className='h-12 w-12 bg-dark-400 hover:bg-blue rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaTelegramPlane/></a>
+                    <a href="https://www.instagram.com/sumitrajput.376/" className='h-12 w-12 bg-dark-400 hover:bg-[#E4405F] rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaInstagram/></a>
+                     <a href="https://sumit-kumar-portfolio-lilac.vercel.app/" className='h-12 w-12 bg-dark-400 hover:bg-pink rounded-full flex text-xl  cursor-pointer items-center justify-center'><FaGlobe/></a>
                 </div>
                 </div>
                 </div>
