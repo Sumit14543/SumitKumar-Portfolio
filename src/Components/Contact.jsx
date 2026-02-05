@@ -95,7 +95,7 @@ const sendEmail = (e) => {
                   <div className='text-purple text-2xl mr-4'>
                   
 
-                  <a href="tel:+919999999999" className="cursor-pointer">
+                  <a href="tel:+919761811212" className="cursor-pointer">
                     <FaPhoneAlt/>
                   </a>
 

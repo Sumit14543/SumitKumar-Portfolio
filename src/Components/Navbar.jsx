@@ -17,23 +17,23 @@ const Navbar = () => {
                 </a>               
             </div>
             <div className='hidden md:flex space-x-10'>
-                <a href="#home" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <a href="/" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Home</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
-                <a href="#about" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <a href="about" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>About</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
-                <a href="#Skills" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <a href="Skills" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Skills</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
-                <a href="#projects" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <a href="project" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Projects</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
-                <a href="#contact" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <a href="contact" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Contact</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
@@ -51,28 +51,40 @@ const Navbar = () => {
        {/* Mobile sub Menue */} 
        {
        showMenu &&
-       <div className='md:hidden mt-4 flex flex-col bg-dark-300 h-screen rounded-lg p-4 space-y-4 items-center justify-center'>
-                <a href="#home" onClick={()=>setShowMenu(!showMenu)} className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>Home</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
-                <a href="#about" onClick={()=>setShowMenu(!showMenu)} className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>About</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
-                <a href="#Skills" onClick={()=>setShowMenu(!showMenu)} className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>Skills</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
-                <a href="#projects" onClick={()=>setShowMenu(!showMenu)} className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>Projects</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
-                <a href="#contact" onClick={()=>setShowMenu(!showMenu)} className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>Contact</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
-       </div>
+       <div className='md:hidden fixed top-20 left-0 w-full bg-dark-300 border-t border-white/10 p-6 space-y-6'>
+
+    <a href="/"
+        onClick={()=>setShowMenu(false)}
+        className='block  text-white text-lg hover:text-purple transition'>
+        Home
+    </a>
+
+    <a href="about"
+        onClick={()=>setShowMenu(false)}
+        className='block text-white text-lg hover:text-purple transition'>
+        About
+    </a>
+
+    <a href="skills"
+        onClick={()=>setShowMenu(false)}
+        className='block text-white text-lg hover:text-purple transition'>
+        Skills
+    </a>
+
+    <a href="project"
+        onClick={()=>setShowMenu(false)}
+        className='block text-white text-lg hover:text-purple transition'>
+        Projects
+    </a>
+
+    <a href="contact"
+        onClick={()=>setShowMenu(false)}
+        className='block text-white text-lg hover:text-purple transition'>
+        Contact
+    </a>
+
+</div>
+
        }
    </nav>
   )
