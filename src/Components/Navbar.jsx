@@ -59,25 +59,25 @@ const Navbar = () => {
         Home
     </a>
 
-    <a href="about"
+    <a href="/about"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         About
     </a>
 
-    <a href="skills"
+    <a href="/skills"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Skills
     </a>
 
-    <a href="project"
+    <a href="/project"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Projects
     </a>
 
-    <a href="contact"
+    <a href="/contact"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Contact
