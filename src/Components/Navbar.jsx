@@ -27,7 +27,7 @@ const Navbar = () => {
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </Link>
                 <Link to="/skills" className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>skills</span>
+                    <span>Skills</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </Link>
                 <Link to="project" className='relative  text-white transition duration-300 hover:text-purple group '>
