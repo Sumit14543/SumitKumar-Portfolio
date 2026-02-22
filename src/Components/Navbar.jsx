@@ -54,35 +54,35 @@ const Navbar = () => {
        showMenu &&
        <div className='md:hidden fixed top-20 left-0 w-full bg-dark-300 border-t border-white/10 p-6 space-y-6'>
 
-    <a href="/"
+    <Link to="/"
         onClick={()=>setShowMenu(false)}
         className='block  text-white text-lg hover:text-purple transition'>
         Home
-    </a>
+    </Link>
 
-    <a href="about"
+    <Link to="about"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         About
-    </a>
+    </Link>
 
-    <a href="skills"
+    <Link to="skills"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Skills
-    </a>
+    </Link>
 
-    <a href="project"
+    <Link to="project"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Projects
-    </a>
+    </Link>
 
-    <a href="contact"
+    <Link to="contact"
         onClick={()=>setShowMenu(false)}
         className='block text-white text-lg hover:text-purple transition'>
         Contact
-    </a>
+    </Link>
 
 </div>
 
