@@ -1,5 +1,6 @@
 import { nav } from 'framer-motion/client'
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
 
@@ -25,10 +26,7 @@ const Navbar = () => {
                     <span>About</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
                 </a>
-                <a href="Skills" className='relative  text-white transition duration-300 hover:text-purple group '>
-                    <span>Skills</span>
-                    <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </a>
+                 <Link to="/skills" className="nav-link">Skills</Link>
                 <a href="project" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Projects</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
