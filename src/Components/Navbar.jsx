@@ -18,26 +18,26 @@ const Navbar = () => {
                 </a>               
             </div>
             <div className='hidden md:flex space-x-10'>
-                <link to="/" className='relative  text-white transition duration-300 hover:text-purple group '>
+                <Link to="/" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Home</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </link>
-                <link to="/about" className='relative  text-white transition duration-300 hover:text-purple group '>
+                </Link>
+                <Link to="/about" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>About</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </link>
-                  <link to="/skills" className='relative  text-white transition duration-300 hover:text-purple group '>
+                </Link>
+                <Link to="/skills" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>skills</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </link>
-                <link to="/project" className='relative  text-white transition duration-300 hover:text-purple group '>
+                </Link>
+                <Link to="project" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Projects</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </link>
-                <link to="/contact" className='relative  text-white transition duration-300 hover:text-purple group '>
+                </Link>
+                <Link to="contact" className='relative  text-white transition duration-300 hover:text-purple group '>
                     <span>Contact</span>
                     <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full'></span>
-                </link>
+                </Link>
             </div>
             <div className='md:hidden'>
                 {
